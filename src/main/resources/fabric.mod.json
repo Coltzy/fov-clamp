@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "fovclamp",
+	"version": "${version}",
+	"name": "fovclamp",
+	"description": "Lightweight mod that can set a clamp on your fov multiplier.",
+	"authors": [
+		"Coltzy"
+	],
+	"contact": {
+		"sources": "https://github.com/Coltzy/fov-clamp"
+	},
+	"license": "MIT",
+	"icon": "assets/fovclamp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"fovclamp.Fovclamp"
+		]
+	},
+	"mixins": [
+		"fovclamp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
